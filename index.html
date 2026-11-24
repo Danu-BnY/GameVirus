@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>VIRUS INVASION</title>
+<link rel="stylesheet" href="gaya/tampilan.css">
+</head>
+<body>
+<canvas id="Corona"></canvas>
+<button id="btnBisu" title="Suara (tombol M)">🔊</button>
+
+<section id="menu" class="lapisan">
+  <div class="hias virus v1"></div><div class="hias virus v2"></div><div class="hias sel s1"></div><div class="hias sel s2"></div>
+  <div class="isi">
+    <h1>VIRUS<br>INVASION</h1>
+    <div class="panel">
+      <h2>Kontrol</h2>
+      <ul>
+        <li><b>W A S D</b> Bergerak</li>
+        <li><b>Space</b> Dash</li>
+        <li><b>Klik kiri</b> Menembak vaksin</li>
+        <li><b>Tahan klik kanan</b> Shield</li>
+        <li><b>Mouse</b> Mengarahkan senjata</li>
+      </ul>
+    </div>
+    <button id="btnMain" class="tmb">PLAY</button>
+  </div>
+</section>
+
+<section id="cerita" class="lapisan" hidden>
+  <div class="isi kecil">
+    <p>Kamu adalah sebuah sel darah putih, bagian dari sistem pertahanan tubuh manusia. Tubuh sedang menghadapi ancaman dari berbagai virus yang berhasil masuk dan mulai menyebar. Tugasmu adalah melindungi tubuh, menghadapi setiap gelombang serangan, dan menghentikan sumber ancaman sebelum semuanya terlambat.</p>
+    <button id="btnMulai" class="tmb">MULAI PERTEMPURAN</button>
+  </div>
+</section>
+
+<section id="gameover" class="lapisan gelap" hidden>
+  <div class="isi kecil"><h1 class="merah">GAME OVER</h1>
+    <p>Pertahanan tubuh gagal! Sepertinya kamu perlu latihan lagi.</p>
+    <button id="btnUlang" class="tmb">RESTART</button></div>
+</section>
+
+<section id="menang" class="lapisan terang" hidden>
+  <div class="isi kecil"><h1 class="hijau">VICTORY</h1>
+    <p>Selamat! Kamu berhasil menyelamatkan tubuh manusia dari invasi virus.</p>
+    <button id="btnUlang2" class="tmb">MAIN LAGI</button></div>
+</section>
+
+<script type="module" src="skrip/utama.js"></script>
+</body>
+</html>
